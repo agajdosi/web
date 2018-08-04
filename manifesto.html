@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+  <meta charset="UTF-8">
   <style type="text/css">
 
 html, body {
@@ -34,6 +34,8 @@ html, body {
   z-index: 100;
   padding: 10px;
   position: relative;
+
+  overflow: hidden; 
 }
 
 .prev {
@@ -50,7 +52,7 @@ html, body {
 }
 
 .next {
-   background-color: white;
+  background-color: white;
   border: 1px solid gray;
   border-radius: 10px;
   box-shadow: 7px 7px 7px #777777;
@@ -60,6 +62,47 @@ html, body {
   right: 0px;
   z-index: 20;
   padding: 10px;
+}
+
+.left {
+  border: 2px solid red;
+  width: 34%;
+  float:left;
+  position: relative;
+}
+
+.right {
+  width: 65%;
+  float: left;
+  position: relative;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+  .right {
+    width: 100%;
+  }
+  .left {
+    width: 100%;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1001px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
+  .left {
+    height: 100%;
+  }
+  .langs {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
 
   </style>
@@ -73,18 +116,45 @@ html, body {
     </a>
 
     <div class="card">
-        <h1>Event archive</h1>
-        <p>With FlexBox it is easy to place an add-on to the start of an input or
-            a button to the end of an input. An add-on can be text or an image. An add-on
-            is used to explain to a user what type of information should be put in the
-            input field.</p><hr>
-        <p>With FlexBox it is easy to place an add-on to the start of an input or
-            a button to the end of an input. An add-on can be text or an image. An add-on
-            is used to explain to a user what type of information should be put in the
-            input field.With FlexBox it is easy to place an add-on to the start of an input or
-            a button to the end of an input. An add-on can be text or an image. An add-on
-            is used to explain to a user what type of information should be put in the
-            input field.</p>
+        <div class="left">
+            <h2>COLLECTIVE</br>
+            For Ending Human</br>
+            Over-specialisation</h2>
+            <div class="langs">
+              <a href="todo">EN</a></br>
+              CZ</br>
+              <a href="todo">DE</a></br>
+              <a href="todo">ZH</a></br>
+              <a href="todo">FR</a></br>
+              <a href="todo">GR</a></br>
+            </div>
+        </div>
+
+        <div class="right">
+            <p style="font-size:16px">
+            Kapitalismus z nás dělá ozubená kolečka.
+            Za práci dostáváme možnost sami sebe promazat k ještě vyšším výkonům; naše mzda nás žene do začarovaného kruhu honby za vyšší spotřebou.
+            Jsme specifickou součástkou, která se jinam nehodí – zdvořile odkazuje oddělení lidských zdrojů.
+            Povzbuzují nás cukrem k firemní kávě zdarma a bičem personálních auditů.
+          </p>
+          <p style="font-size:19px">
+            Ať jsme zaměstnanci nebo osoby samostatně výdělečně činné, jsme závislí na naší specializaci.
+            Proto cítíme úzkost už jen při představě, že ze stroje lze vystoupit jinak než terminálním odchodem na šrotoviště.
+            Bojujeme s úzkou specializací, která nás nutí zůstat v područí utlačovatele, který nás na sobě učinil bezvýhradně ekonomicky i citově závislými,
+            ne s hlubokou znalostí, pochopením a odborným věděním.
+          </p>
+          <p style="font-size:22px">
+            Osvobozujeme se rozšiřováním základny našich kompetencí a její nadšenou diverzifikaci.
+            Osvobozujeme se probouzením naší představivosti a radostí z rozmanitosti.
+            Osvobozujeme se vzájemnou péčí.
+          </p>
+          <p style="font-size:25px">
+            Smrt seberozvoji a rekvalifikaci!
+            Utíkáme ze železných klecí disciplín, které nás pod rouškou excelence učinili tu hypertrofovanými, jinde ochablými.
+            Cesta od kapitalismu do společnosti nerůstu vede přes ukončení úzké specializace!
+          </p>
+        </div>
+
     </div>    
 </div>
 
