@@ -1,0 +1,103 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+.container {
+  min-width: 80vw;
+  min-height: 75vh;
+  max-width: 80vw;
+  margin: 5vh auto;
+  display: flex;
+  position: relative;
+}
+.card {
+  background-color: yellow;
+  border-radius: 10px;
+  box-shadow: 7px 7px 7px #777777;
+  margin: 0px auto;
+  max-width: 80%;
+  z-index: 100;
+  position: relative;
+  overflow: hidden; 
+}
+.prev {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 7px 7px 7px #777777;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  left: 0px;
+  z-index: 20;
+  padding: 10px;
+}
+.next {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 7px 7px 7px #777777;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  right: 0px;
+  z-index: 20;
+  padding: 10px;
+}
+.left {
+  width: 34%;
+  float:left;
+  position: relative;
+}
+.right {
+  width: 65%;
+  float: left;
+  position: relative;
+}
+.logo {
+  padding: 10px;
+}
+.collective {
+  font-size: 30px;
+}
+.slogan {
+  font-size: 25px;
+}
+.lang-menu {
+  padding: 10px;
+}
+.language {
+  font-size: 36px;
+}
+.active {
+  font-size: 20px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+  .right {
+    width: 100%;
+  }
+  .left {
+    width: 100%;
+  }
+  .language {
+    float: left;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1001px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
+  .left {
+    height: 87vh;
+  }
+  .lang-menu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

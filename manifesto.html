@@ -2,110 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <style type="text/css">
-
-html, body {
-    padding: 0px;
-    margin: 0px;
-}
-
-.container {
-  min-width: 80vw;
-  min-height: 75vh;
-
-  max-width: 80vw;
-
-  margin: 5vh auto;
-  
-  display: flex;
-  position: relative;
-}
-
-
-.card {
-  background-color: yellow;
-  border: 1px solid gray;
-  border-radius: 10px;
-  box-shadow: 7px 7px 7px #777777;
-  align-items: stretch;
-
-  margin: 0px auto;
-  max-width: 80%;
-  z-index: 100;
-  padding: 10px;
-  position: relative;
-
-  overflow: hidden; 
-}
-
-.prev {
-  background-color: white;
-  border: 1px solid gray;
-  border-radius: 10px;
-  box-shadow: 7px 7px 7px #777777;
-  height: 80%;
-  position: absolute;
-  top: 10%;
-  left: 0px;
-  z-index: 20;
-  padding: 10px;
-}
-
-.next {
-  background-color: white;
-  border: 1px solid gray;
-  border-radius: 10px;
-  box-shadow: 7px 7px 7px #777777;
-  height: 80%;
-  position: absolute;
-  top: 10%;
-  right: 0px;
-  z-index: 20;
-  padding: 10px;
-}
-
-.left {
-  border: 2px solid red;
-  width: 34%;
-  float:left;
-  position: relative;
-}
-
-.right {
-  width: 65%;
-  float: left;
-  position: relative;
-}
-
-/* Mobile Styles */
-@media only screen and (max-width: 1000px) {
-  body {
-    background-color: #F09A9D; /* Red */
-  }
-  .right {
-    width: 100%;
-  }
-  .left {
-    width: 100%;
-  }
-}
-
-/* Desktop Styles */
-@media only screen and (min-width: 1001px) {
-  body {
-    background-color: #B2D6FF; /* Blue */
-  }
-  .left {
-    height: 100%;
-  }
-  .langs {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-}
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
@@ -117,17 +14,38 @@ html, body {
 
     <div class="card">
         <div class="left">
-            <h2>COLLECTIVE</br>
-            For Ending Human</br>
-            Over-specialisation</h2>
-            <div class="langs">
-              <a href="todo">EN</a></br>
-              CZ</br>
-              <a href="todo">DE</a></br>
-              <a href="todo">ZH</a></br>
-              <a href="todo">FR</a></br>
-              <a href="todo">GR</a></br>
+
+            <div class="logo">
+              <div class="collective">COLLECTIVE</div>
+              <div class="slogan">For Ending Human</br>
+              Over-specialisation
+              </div>
             </div>
+
+            <div class="lang-menu">
+              <div class="language">
+                <a href="todo">EN</a>
+              </div>
+              <div class="active language">
+                CZ
+              </div>
+              <div class="language">
+                <a href="todo">DE</a>
+              </div>
+              <div class="language">
+                <a href="todo">ZH</a>
+              </div>
+              <div class="language">
+                <a href="todo">ZH</a>
+              </div>
+              <div class="language">
+                <a href="todo">FR</a>
+              </div>
+              <div class="language">
+                <a href="todo">GR</a>
+              </div>
+            </div>
+
         </div>
 
         <div class="right">
