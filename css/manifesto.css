@@ -1,0 +1,25 @@
+.language {
+    font-size: 36px;
+}
+.lang-menu {
+    padding: 10px;
+  }
+.active {
+    font-size: 20px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 1000px) {
+    .language {
+      float: left;
+    }
+}
+  
+/* Desktop Styles */
+@media only screen and (min-width: 1001px) {
+    .lang-menu {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+}
