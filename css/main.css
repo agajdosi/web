@@ -25,6 +25,7 @@ html, body {
   border-radius: 10px;
   box-shadow: 7px 7px 7px #777777;
   height: 80%;
+  max-height: 700px;
   position: absolute;
   top: 10%;
   left: 0px;
@@ -36,6 +37,7 @@ html, body {
   border-radius: 10px;
   box-shadow: 7px 7px 7px #777777;
   height: 80%;
+  max-height: 700px;
   position: absolute;
   top: 10%;
   right: 0px;

@@ -1,7 +1,18 @@
 .post{
-    color: red;
+    padding: 0 0 5% 0;
+}
+
+.post a{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+
 }
 
 .headline{
     font-size: 20px;
+}
+
+.date{
+    padding: 0 0 1% 0;
 }
