@@ -1,0 +1,41 @@
+#bg-container {
+    width: 98vw;
+    height: 98vh;
+    display: table-cell;
+    vertical-align: middle;
+}
+  
+/* Desktop Styles */
+@media only screen and (min-width: 1001px) {
+  #bg-animation {
+    height: 95vh;
+    display: block;
+    margin: auto;
+  }
+  #logo {
+    width: 25vw;
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+  }  
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 1000px) {
+  #bg-animation {
+    width: 90vw;
+    display: inline-block;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  #logo {
+    width: 45vw;
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+  }
+}
+
+
+
