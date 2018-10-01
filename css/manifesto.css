@@ -1,3 +1,11 @@
+.card{
+    background-color: white;
+}
+
+.next{
+    background-color: yellow;
+}
+
 .language {
     font-size: 36px;
 }

@@ -1,3 +1,7 @@
+.card{
+    background-color: yellow;
+}
+
 .post{
     padding: 0 0 5% 0;
 }
@@ -6,7 +10,6 @@
     color: white;
     background-color: black;
     text-decoration: none;
-
 }
 
 .headline{

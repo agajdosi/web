@@ -3,19 +3,17 @@ html, body {
   margin: 0px;
 }
 .container {
-  min-width: 80vw;
+  width: 95vw;
   min-height: 75vh;
-  max-width: 80vw;
   margin: 5vh auto;
   display: flex;
   position: relative;
 }
 .card {
-  background-color: yellow;
   border-radius: 10px;
-  box-shadow: 7px 7px 7px #777777;
+  box-shadow: 3px 3px 10px 10px #777777;
   margin: 0px auto;
-  max-width: 80%;
+  width: 95%;
   z-index: 100;
   position: relative;
   overflow: hidden; 
@@ -23,8 +21,9 @@ html, body {
 .prev {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 7px 7px 7px #777777;
+  box-shadow: 3px 3px 10px 10px #777777;
   height: 80%;
+  min-width: 20vw;
   max-height: 700px;
   position: absolute;
   top: 10%;
@@ -35,8 +34,9 @@ html, body {
 .next {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 7px 7px 7px #777777;
+  box-shadow: 3px 3px 10px 10px #777777;
   height: 80%;
+  min-width: 20vw;
   max-height: 700px;
   position: absolute;
   top: 10%;
@@ -54,7 +54,10 @@ html, body {
   position: relative;
 }
 .logo {
-  padding: 10px;
+  width: 30vw;
+  position: absolute;
+  left: 2vw;
+  z-index: 120;
 }
 .collective {
   font-size: 30px;
@@ -63,11 +66,16 @@ html, body {
   font-size: 25px;
 }
 
-
 /* Mobile Styles */
 @media only screen and (max-width: 1000px) {
-  body {
-    background-color: #F09A9D; /* Red */
+  .card{
+    width: 80%;
+  }
+  .prev{
+    left: 10px;
+  }
+  .next{
+    right: 10px;
   }
   .right {
     width: 90%;
@@ -76,13 +84,13 @@ html, body {
   .left {
     width: 90%;
   }
+  .logo{
+    display: none;
+  }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 1001px) {
-  body {
-    background-color: #B2D6FF; /* Blue */
-  }
   .left {
     height: 87vh;
   }
