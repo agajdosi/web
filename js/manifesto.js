@@ -31,7 +31,7 @@ function getLanguage() {
             break;
         case "fr":
             break;
-        case "gr":
+        case "pl":
             break;
         default:
             window.location.href = "manifesto.html?language=cz";
