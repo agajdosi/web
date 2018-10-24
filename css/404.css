@@ -1,0 +1,23 @@
+html, body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: yellow;
+}
+
+html a {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+#code {
+    font-size: 50px;
+}
+
+#comment {
+    font-size: 24px;
+}
+
+#link {
+    font-size: 50px;
+}
