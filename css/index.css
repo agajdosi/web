@@ -1,14 +1,11 @@
-#bg-container {
-    width: 98vw;
-    height: 98vh;
-    display: table-cell;
-    vertical-align: middle;
+html, body {
+  overflow-y: hidden;
 }
-  
+
 /* Desktop Styles */
 @media only screen and (min-width: 1001px) {
   #bg-animation {
-    height: 95vh;
+    height: 80vh;
     display: block;
     margin: auto;
   }
@@ -23,18 +20,16 @@
 /* Mobile Styles */
 @media only screen and (max-width: 1000px) {
   #bg-animation {
-    width: 90vw;
-    display: inline-block;
-    margin: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    visibility: hidden;
   }
+
   #logo {
-    width: 45vw;
+    width: 80vw;
     position: absolute;
-    top: 2vh;
-    left: 2vh;
+    top: 20vh;
+    left: 10vw;
   }
+
 }
 
 
