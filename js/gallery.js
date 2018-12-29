@@ -2,19 +2,20 @@ window.onload = getPosts()
 
 function showMore() {    
     this.parentElement.getElementsByClassName("more")[0].style.display = "block"
-    this.textContent = "🡓"
+    this.textContent = "↓"
     this.onclick = showLess
 };
 
 function showLess() {
-    this.textContent = "🡒"
+    this.textContent = "→"
     this.onclick = showMore
     this.parentElement.getElementsByClassName("more")[0].style.display = "none"
 }
 
 function getPosts() {
     var i;
-    for (i = 1; i < 100; i++) {        
+    var max = 100;
+    for (i = 1; i < max; i++) {        
         var post = 'src/gallery/' + String(i) + '/post.html';
         var req = new XMLHttpRequest();
 
@@ -27,17 +28,18 @@ function getPosts() {
             //LOAD POST
             var post = document.createElement('div');
             post.className = "post"
+            post.style.order = this.postNumber;
             post.innerHTML = this.responseText;
 
             //ADD MORE BUTTON
-            var moreButton = document.createElement('div')
-            moreButton.textContent = "🡒"
+            var moreButton = document.createElement('p')
+            moreButton.textContent = "→"
             moreButton.onclick = showMore
             moreButton.className = "moreButton"
             post.insertBefore(moreButton, post.lastElementChild)
 
             //ADD FINAL POST TO DOCUMENT
-            document.getElementById('right').appendChild(post);       
+            document.getElementById('right').appendChild(post);
         };
 
         req.send();
