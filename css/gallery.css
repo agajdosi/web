@@ -12,10 +12,35 @@
     text-decoration: none;
 }
 
+.post img{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 80vh;
+}
+
 .headline{
     font-size: 20px;
 }
 
 .date{
     padding: 0 0 1% 0;
+}
+
+.preview{
+    padding: 0 0 25px 0;
+}
+
+.more{
+    padding: 25px 0 0 0;
+    display: none;
+}
+
+.moreButton{ 
+    text-align: center;
+    font-size: 40px;
+}
+
+.moreButton:hover{
+    cursor: pointer;
 }
